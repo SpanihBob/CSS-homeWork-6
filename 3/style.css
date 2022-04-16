@@ -1,0 +1,104 @@
+*{box-sizing: border-box;}
+body{min-width: 340px;}
+/* делаем стиль меню */
+        .menu{  position: absolute;
+                left: -30px;
+                top: -15px;}
+            li{ list-style-type: none;
+                width: 120px;}
+    li:hover{   background-color: rgb(233, 221, 221);
+                transform: scale(1.1);
+                color: rgb(248, 250, 245);
+                cursor: pointer;}
+    img{vertical-align: middle;}
+    .imgmenu, .textmenu {display: inline-block;}
+
+/* задаем стиль хедера */
+    .inlineh{display: inline-block;
+            vertical-align: middle;
+            margin-left: 2%;
+            margin-right: 2%;
+            white-space: pre;}
+    .righth{float: right;}
+    .hed{width: 25px;}
+                
+/* задаем стиль строки */  
+        .stroka1{width: 90%;
+        float: left;}
+    .stol{position: relative;}
+    .mail{margin-left: 150px;}
+        .stroka{width: 100%;}    
+                .zvezda{width: 15px;
+                        margin-right: 2%;}
+                
+
+            .me{width: 15%;}
+            .i{width: 50%;}
+                .trip{  display: inline-block;
+                        width: 35%;}
+                .lorem{ color: rgb(190, 190, 188);
+                        display: inline-block;
+                        width: 65%;
+                        white-space: nowrap; /* Отменяем перенос текста */
+                        overflow: hidden; /* Обрезаем содержимое */}
+                .left{float: left;} 
+                .scre{  width: 10%;
+                        text-align: center;}
+                .date{width: 15%;
+                    text-align: right;}   
+            .inline{display: inline-block;
+                    vertical-align: middle;}
+            .inline1{display: inline-block;
+                    vertical-align: middle;}
+        hr{clear: both;}         /* отменяем обтекание для hr */
+    /* стили чекбокса звезда */
+        .label{   display: inline-block;
+                position: relative;}
+
+        input{  appearance: none;        /* прячем чекбокс */
+                -moz-appearance: none;
+                -webkit-appearance: none;}
+        
+        .zvezda1{width: 1em;/* ширина на весь элемент */
+                height: 1em;/*  высота на весь элемент */
+                position: absolute;                
+                background-image: url(../img/star1.svg);
+                background-size: 100%;}/* растягиваемкартинку на весь элемент */
+        
+        .div{   width: 30px;
+                float: left;}
+
+        /* стили нажатой звезды */
+        input:checked + .zvezda1{background-image: url(../img/star2.svg);}
+        .zvezda1:hover{cursor: pointer;}
+   
+/* задаем изменение */
+@media (max-width: 800px){
+.inline{display: block;}
+.inline1{display: block;}
+.left{float: none;}
+.inline2{vertical-align:top;}
+.trip{width: 100px;}
+.lorem{width: 200px;}}
+
+@media (max-width: 550px){ .textmenu{display: none;}
+                            .mail{margin-left: 60px;}
+                            li{width: 32px;}
+                            .trip{width: 100px;}
+                            .lorem{min-width: 100px;}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

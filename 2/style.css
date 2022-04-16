@@ -1,0 +1,33 @@
+*, *::before, *::after {box-sizing: border-box;}
+
+body{margin: 3%;}
+figure{ margin: 7px;
+        width: 550fr;         
+        border-radius: 3%;
+        max-width: 265px;       
+        border: 2px solid #cde;
+        overflow: hidden; /* Обрезаем содержимое за пределами блока */}
+
+figcaption{ text-align: right;
+            color: cornsilk;
+            background-color: darkblue;
+            padding: 5px;}
+
+img{width: 100%;}
+
+.figa{float: right;}
+.figa1{display: none;
+        }
+.figafloat{float: left;}
+.niz{ clear: left;}
+@media (max-width: 800px){      .figa{display: none;}
+                                .figa1{display: block;}
+                        }
+@media (max-width: 600px){      .figa{display: none;}
+                                .figa1{display: block;}
+                                .figafloat{float: none;}
+                                figure{width: 95%;
+                                max-width: none;}
+                }
+               
+           

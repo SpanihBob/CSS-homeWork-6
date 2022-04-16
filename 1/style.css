@@ -1,0 +1,40 @@
+* {box-sizing: border-box;}/* чтобы браузер учитывал рамки (border) и внутренние отступы (padding) в размере ширины (width) элемента. */
+
+.nadpisi{   display: inline-block;            
+            width: 120px;
+            padding: 1%;
+            }
+
+body{background-color: rgb(46, 119, 75);}
+
+.bel{color: cornsilk;}
+
+.ser{color: rgb(158, 158, 158);}
+
+img{width: 70px;
+    vertical-align: middle;}
+
+.zag{width: 360px;}
+
+.right{float: left;}
+.right1{float:left}
+
+.block{width: 500px;
+display: inline-block;
+vertical-align: middle;}
+
+.size{font-size: 80%;}
+.vse{min-width: 358px;}
+
+
+@media (max-width: 600px){  .block{width: 235px;}
+                            /* .right1{float: right;}
+                            .right{float: left;} */
+                            img{width: 100px;}
+                            .ser{font-size: 120%;}
+                            .nadpisi{width: 115px;}
+                            body{margin: 7%;}
+                            .zag{font-size: 90%;}
+                            
+
+}
